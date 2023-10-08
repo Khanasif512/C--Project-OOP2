@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64612850-C8E2-4090-93A1-1E809CB0D37E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Lab_Hub</RootNamespace>
+    <AssemblyName>Lab Hub</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="DashboardLabAssistant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardLabAssistant.Designer.cs">
+      <DependentUpon>DashboardLabAssistant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardStudent.Designer.cs">
+      <DependentUpon>DashboardStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardTeacher.Designer.cs">
+      <DependentUpon>DashboardTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\labassistants_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\labassistants_update.Designer.cs">
+      <DependentUpon>labassistants_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\labassistants_all.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\labassistants_all.Designer.cs">
+      <DependentUpon>labassistants_all.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\sections_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\sections_update.Designer.cs">
+      <DependentUpon>sections_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\sections_all.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\sections_all.Designer.cs">
+      <DependentUpon>sections_all.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\students_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\students_update.Designer.cs">
+      <DependentUpon>students_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\students_all.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\students_all.Designer.cs">
+      <DependentUpon>students_all.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\teachers_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\teachers_update.Designer.cs">
+      <DependentUpon>teachers_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\teachers_all.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\teachers_all.Designer.cs">
+      <DependentUpon>teachers_all.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Dashboard\Grades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Dashboard\Grades.Designer.cs">
+      <DependentUpon>Grades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher Dashboard\Grades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher Dashboard\Grades.Designer.cs">
+      <DependentUpon>Grades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher Dashboard\LabAssisstant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher Dashboard\LabAssisstant.Designer.cs">
+      <DependentUpon>LabAssisstant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher Dashboard\LabReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher Dashboard\LabReports.Designer.cs">
+      <DependentUpon>LabReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher Dashboard\Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher Dashboard\Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DashboardLabAssistant.resx">
+      <DependentUpon>DashboardLabAssistant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardStudent.resx">
+      <DependentUpon>DashboardStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardTeacher.resx">
+      <DependentUpon>DashboardTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.aa-DJ.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.aa.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\labassistants_update.resx">
+      <DependentUpon>labassistants_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\labassistants_all.resx">
+      <DependentUpon>labassistants_all.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin Dashboard\sections_update.resx">
+      <DependentUpon>sections_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\sections_all.resx">
+      <DependentUpon>sections_all.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\students_update.resx">
+      <DependentUpon>students_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\students_all.resx">
+      <DependentUpon>students_all.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\teachers_update.resx">
+      <DependentUpon>teachers_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\teachers_all.resx">
+      <DependentUpon>teachers_all.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Dashboard\Grades.resx">
+      <DependentUpon>Grades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher Dashboard\Grades.resx">
+      <DependentUpon>Grades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher Dashboard\LabAssisstant.resx">
+      <DependentUpon>LabAssisstant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher Dashboard\LabReports.resx">
+      <DependentUpon>LabReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher Dashboard\Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lab Asst. Dashboard\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
